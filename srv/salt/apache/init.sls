@@ -6,7 +6,7 @@ install_lamp_php:
 
 /etc/apache2/mods-available/php7.0.conf:
   file.managed:
-    - source: ../apache/php7.0.conf
+    - source: srv/salt/apache/php7.0.conf
 
 /etc/apache2/mods-enabled/userdir.conf:
   file.symlink:
